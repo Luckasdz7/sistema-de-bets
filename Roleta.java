@@ -10,7 +10,7 @@ public class Roleta extends Jogos {
         this.numeroEscolhido = numeroEscolhido;
     }
 
-    @Override
+  
     public void processarResultado() {
         Random rand = new Random();
         int sorteado = rand.nextInt(37); // 0 a 36
