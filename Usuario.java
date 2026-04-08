@@ -4,19 +4,21 @@ import java.util.List;
 
 public class Usuario {
     private String nome;
-    private List<Aposta> historico;
-    private List<Aposta> historicoApostas;
+    private List<Aposta> historicoApostas; // Mantemos apenas uma lista
 
     public Usuario(String nome) {
         this.nome = nome;
-        this.historico = new ArrayList<>();
+        this.historicoApostas = new ArrayList<>(); // Inicializamos a lista corretamente
     }
 
     public void adicionarAposta(Aposta a) {
-        this.historico.add(a);
+        this.historicoApostas.add(a); // Adiciona à lista correta
     }
 
     public String getNome() { return nome; }
-    public List<Aposta> getHistorico() { return historico; }
-    public List<Aposta> getHistoricoApostas() { return historicoApostas; }
+
+    // Devolvemos a lista que realmente contém os dados
+    public List<Aposta> getHistoricoApostas() { 
+        return historicoApostas; 
+    }
 }

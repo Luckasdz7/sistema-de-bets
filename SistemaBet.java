@@ -88,7 +88,7 @@ public class SistemaBet {
                         for (Aposta a : lista) {
                             System.out.println(a.toString());
                             System.out.println("-----------------------------------------");
-                        }
+                        }//
                     }
                 } else {
                     System.out.println("Erro: Nenhum jogador foi cadastrado ainda. Use a opção 1 primeiro.");
