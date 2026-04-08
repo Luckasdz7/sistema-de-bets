@@ -1,6 +1,7 @@
 package Principal;
 
 
+
 public class Aposta {
     private Jogos jogo;
     private String data;
@@ -10,9 +11,8 @@ public class Aposta {
         this.data = data;
     }
 
-    public Jogos getJogo()
-    { return jogo; 
-    }
+    public Jogos getJogo() { return jogo; }
+    
     @Override
     public String toString() {
         return "Data: " + data + " | " + jogo.toString();
